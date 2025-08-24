@@ -19,7 +19,7 @@ header {
 #display {
     width: 100%;
     padding: 15px;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: left;
     border: none;
     background-color: hsl(0, 0%, 2%);
@@ -64,13 +64,21 @@ button:active {
     background-color: hsl(35, 100%, 75%);
 }
 
+
+/* Phones */
+@media (max-width: 600px) {
+    #display {
+        font-size: 3.5rem;   /* increase text size */
+        padding: 25px;       /* increase padding */
+        height: 80px;        /* ensure taller input */
+    }
+}
+
 /* Extra small phones */
 @media (max-width: 400px) {
     #display {
-        font-size: 2.5rem;
-        padding: 10px;
-    }
-    button {
-        font-size: 1.2rem;
+        font-size: 4rem;     /* even larger for small devices */
+        padding: 30px;
+        height: 90px;
     }
 }
